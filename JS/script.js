@@ -1,38 +1,19 @@
-document.write("<table border='1' cellspacing='0'>");
-for (let i = 1; i < 11; i++) {
-    document.write("<tr align='center'>");
-    for (let j = 1; j < 11; j++) {
-        if ((i + j) % 2 == 0) {
-            document.write("<td bgcolor='yellow'>" + i*j + "</td>");
-        } else {
-            document.write("<td bgcolor='red'>" + i*j + "</td>");
-        }
-    }
-    document.write("</tr>");
-}
-document.write("</table>");
+document.writeln("<div id='thermo'></div>");
+let div = document.querySelector("#thermo");
+div.innerHTML = `Термоста́т — прибор для поддержания постоянной температуры. Поддержание температуры
+обеспечивается либо за счёт использования терморегуляторов, либо осуществлением фазового
+перехода (например, таяние льда). Для уменьшения потерь тепла или холода термостаты, как
+правило, теплоизолируют. Но не всегда. Широко известны автомобильные моторы, где летом нет
+никакой теплоизоляции и за счёт действия восковых термостатов поддерживается постоянная
+температура. Другим примером термостата, широко используемого в быту, является холодильник.`;
+div.style.backgroundColor = 'yellow';
+div.style.color = 'black';
+div.style.width = '256px';
+div.style.height = '256px';
+div.style.overflow = 'scroll';
+div.style.outline = '1px dashed red';
 
-document.write("<br>");
-
-// вариант 2
-document.write("<table border='1' cellspacing='0'>");
-
-document.write("<tr><td></td>");
-for (let j = 1; j < 11; j++) {
-    document.write("<td align='center'>" + j + "</td>");
-}
-document.write("</tr>");
-
-for (let i = 1; i < 11; i++) {
-    document.write("<tr>");
-    document.write("<td align='center'>" + i + "</td>");
-    for (let j = 1; j < 11; j++) {
-        if ((i + j) % 2 == 0) {
-            document.write("<td bgcolor='yellow' align='center'>" + i*j + "</td>");
-        } else {
-            document.write("<td bgcolor='red' align='center'>" + i*j + "</td>");
-        }
-    }
-    document.write("</tr>");
-}
-document.write("</table>");
+div.className = 'resetFont';
+div.style.fontSize = '20px';
+div.style.fontWeight = '400';
+div.style.textDecoration = 'underline';

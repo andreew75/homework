@@ -7,25 +7,29 @@
 </head>
 <body>
   <h1>JavaScript</h1>
-<!--  <div class="container">-->
-  <div id="messages-container">
-    <div class="pane">
-      <h3>Лошадь</h3>
-      <p>Домашняя лошадь — животное семейства непарнокопытных, одомашненный и единственный сохранившийся подвид
-        дикой лошади, вымершей в дикой природе, за исключением небольшой популяции лошади Пржевальского.</p>
-      <span class="remove-button"></span>
+
+  <div id="container">
+    <div class="title">
+      <h2>Отгадай загадку</h2>
     </div>
-    <div class="pane">
-      <h3>Осёл</h3>
-      <p>Домашний осёл или ишак — одомашненный подвид дикого осла, сыгравший важную историческую роль в развитии хозяйства и культуры человека. Все одомашненные ослы относятся к африканским ослам.</p>
-      <span class="remove-button"></span>
+    <div id="form-radio">
+      <form name="form-choose">
+        <input type="radio" name="radio" value="Капуста"> Сто одёжек и
+        все без застёжек <br>
+        <input type="radio" name="radio" value="Гусь"> В воде купался,
+        а сух остался <br>
+        <input type="radio" name="radio" value="Бегемот"> У него огромный рот,
+        он зовется...<br>
+        <input type="radio" name="radio" value="Замок"> Не лает, не кусает,
+        а в дом не пускает
+      </form>
     </div>
-    <div class="pane">
-      <h3>Корова, а также пара слов о диком быке, о волах и о тёлках. </h3>
-      <p>Корова — самка домашнего быка, одомашненного подвида дикого быка, парнокопытного жвачного животного семейства полорогих. Самцы вида называются быками, молодняк — телятами, кастрированные самцы — волами. Молодых (до первой стельности) самок называют тёлками.</p>
-      <span class="remove-button"></span>
+    <div class="button">
+      <button id="btn">Ответ</button>
     </div>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="script.js"></script>
 </body>
 </html>

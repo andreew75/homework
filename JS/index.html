@@ -3,33 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
-  <link rel="stylesheet" href="style.css">
+<!--  <link rel="stylesheet" href="style.css">-->
 </head>
 <body>
   <h1>JavaScript</h1>
 
   <div id="container">
-    <div class="title">
-      <h2>Отгадай загадку</h2>
-    </div>
-    <div id="form-radio">
-      <form name="form-choose">
-        <input type="radio" name="radio" value="Капуста"> Сто одёжек и
-        все без застёжек <br>
-        <input type="radio" name="radio" value="Гусь"> В воде купался,
-        а сух остался <br>
-        <input type="radio" name="radio" value="Бегемот"> У него огромный рот,
-        он зовется...<br>
-        <input type="radio" name="radio" value="Замок"> Не лает, не кусает,
-        а в дом не пускает
+      <form name="guest-book" id="book">
+          <fieldset>
+              <legend>Гостевая книга</legend>
+              <p><input type="text" name="your-name" id="your-name"> Имя</p>
+              <textarea name="guest-book" id="guest-book" cols="50" rows="10">Настоящие условия лицензии являются соглашением
+sergey@mail.ru между корпорацией Microsoft (или, в зависимости от места вашего проживания, одним из ее аффилированных лиц) и вами. Прочтите их внимательно. Они применяются к вышеуказанному программному обеспечению, включая носители, на которых оно распространяется (если они есть). Условия лицензионного соглашения, предоставляемые в печатном виде, которые могут mister.900@gmail.com сопровождать программное обеспечение, имеют преимущественную силу над любыми условиями лицензии, предоставляемыми в электронном виде.
+Эти условия tester_3333.mig@bk.ru распространяются также на</textarea>
+              <p><input type="button" name="button" value="Отправить сообщение" onclick="processMessage()"></p>
+          </fieldset>
       </form>
-    </div>
-    <div class="button">
-      <button id="btn">Ответ</button>
-    </div>
+      <div id="message"></div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="script.js"></script>
 </body>
 </html>

@@ -1,15 +1,40 @@
-function processMessage() {
-    let textArea = document.querySelector("#guest-book").value;
-    let userName = document.querySelector("#your-name").value;
+function Worker(name, age, job) {
+    this.name = name;
+    this.age = age;
+    this.job = job;
 
-    const patternEmail = /([0-9a-z_.-]+@[0-9a-z_^\.]+\.[a-z]{2,3})/ig;
-    let formatText= textArea.replace(patternEmail, "<span style='color:red'>$1</span>");
+    this.who = function() {
+        const capitalizedJob = this.job.charAt(0).toUpperCase() + this.job.slice(1) + 'ом';
+        return `<b>Я ${this.name}, мне ${this.age} лет.</b> Я работаю <b>${capitalizedJob}.</b><br>`;
+    };
 
-    let message = document.querySelector("#message");
-    message.innerHTML = `
-        <fieldset>
-            <legend>Сообщение от пользователя <b>${userName}</b></legend>
-            <p><b>Текст сообщения:</b><br>${formatText}</p>
-        </fieldset>
-    `;
-};
+    this.displayInfo = function() {
+        document.writeln(this.who());
+    };
+}
+
+const workers = [
+    new Worker("Дмитрий", 26, "дизайнер"),
+    new Worker("Станислав", 29, "программист"),
+    new Worker("Сергей", 35, "менеджер")
+];
+
+workers.forEach(worker => worker.displayInfo());
+
+// Вариант 2
+//function Worker(name, age, job) {
+//    this.name = name;
+//    this.age = age;
+//    this.job = job
+//
+//    this.who = function(){
+//        document.writeln("<b>Я " + this.name + ", " + "мне " + this.age + " лет.</b> Я работаю " + "<b>" + this.job.charAt(0).toUpperCase() + this.job.slice(1) + "ом.</b>" + "<br>");
+//    }
+//}
+//
+//let designer = new Worker("Дмитрий", 26, "дизайнер");
+//let programmer = new Worker("Станислав", 29, "программист");
+//let manager = new Worker("Сергей", 35, "менеджер");
+//designer.who();
+//programmer.who();
+//manager.who();

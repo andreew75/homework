@@ -6,31 +6,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="section">
-    <h3>Контактная информация</h3>
-    <div id="fields">
-        <form action="server.php" name="form1" method="post">
-            <div class="input-group">
-                <input type="text" name="name" placeholder="Ваше имя" required>
-            </div>
-            <div class="input-group">
-                <input type="tel" name="phone" placeholder="Ваш телефон" required>
-            </div>
-            <button type="submit">Отправить</button>
-        </form>
-    </div>
-    <div class="form-footer">
-        Мы свяжемся с вами в ближайшее время!
-    </div>
-</div>
-<div class="modal-overlay" id="modalWindow">
-    <div class="modal">
-        <div class="modal-icon"></div>
-        <h2 class="modal-title">Успешно отправлено!</h2>
-        <p class="modal-text">Ваша информация успешно отправлена. Мы свяжемся с вами в ближайшее время.</p>
-        <button class="modal-button" onclick="closeModal()">Понятно</button>
-    </div>
-</div>
+<hr>
+<button id="load">Load Users</button>
+<hr>
+<ul id="list"></ul>
+
 <script src="index.js"></script>
 </body>
 </html>

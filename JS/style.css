@@ -4,73 +4,24 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-body {
-    background: mediumpurple;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+ul, li {
+    list-style: disc;
+    margin-left: 30px;
 }
-
-#section {
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    width: 100%;
-    max-width: 450px;
-    transition: transform 0.3s ease;
-}
-
-#section:hover {
-    transform: translateY(-5px);
-}
-
-h3 {
-    text-align: center;
-    color: #333;
-    font-size: 28px;
-    margin-bottom: 30px;
-    font-weight: 600;
-}
-
-#fields {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.input-group {
-    position: relative;
-}
-
-input {
-    width: 100%;
-    height: 55px;
-    padding: 0 20px;
-    margin-top: 5px;
-    border: 2px solid #e1e1e1;
-    border-radius: 12px;
-    font-size: 16px;
-    transition: all 0.3s ease;
-    outline: none;
-}
-
-input:focus {
-    border-color: #667eea;
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-}
-
-input::placeholder {
-    color: #999;
-}
+/*body {*/
+/*    background: mediumpurple;*/
+/*    min-height: 100vh;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    padding: 20px;*/
+/*}*/
 
 button {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1e590e 0%, #48b526 100%);
     color: white;
     border: none;
+    width: 200px;
     border-radius: 12px;
     padding: 18px;
     font-size: 16px;
@@ -79,7 +30,7 @@ button {
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-top: 10px;
+    margin: 10px 20px 20px;
 }
 
 button:hover {
@@ -91,147 +42,7 @@ button:active {
     transform: translateY(0);
 }
 
-.form-footer {
-    text-align: center;
-    margin-top: 20px;
-    color: #666;
-    font-size: 14px;
-}
 
-.modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-}
 
-.modal-overlay.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-.modal {
-    background: white;
-    border-radius: 20px;
-    padding: 40px;
-    text-align: center;
-    max-width: 400px;
-    width: 90%;
-    transform: translateY(-50px);
-    opacity: 0;
-    transition: all 0.3s ease;
-}
-
-.modal-overlay.active .modal {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.modal-icon {
-    width: 80px;
-    height: 80px;
-    background: #4CAF50;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto 20px;
-    animation: scaleIn 0.5s ease;
-}
-
-.modal-icon::before {
-    content: "✓";
-    font-size: 40px;
-    color: white;
-    font-weight: bold;
-}
-
-.modal-title {
-    font-size: 24px;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.modal-text {
-    color: #666;
-    margin-bottom: 25px;
-    line-height: 1.5;
-}
-
-.modal-button {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    border: none;
-    border-radius: 12px;
-    padding: 15px 30px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.modal-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
-}
-
-@keyframes scaleIn {
-    from {
-        transform: scale(0);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@media (max-width: 480px) {
-    #section {
-        padding: 30px 20px;
-    }
-
-    h3 {
-        font-size: 24px;
-    }
-
-    input {
-        height: 50px;
-    }
-
-    .modal {
-        padding: 30px 20px;
-    }
-
-    .modal-icon {
-        width: 60px;
-        height: 60px;
-    }
-
-    .modal-icon::before {
-        font-size: 30px;
-    }
-}
 
 

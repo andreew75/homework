@@ -40,9 +40,9 @@ function getRandom(min, max) {
 }
 
 function getRandomColor() {
-    let r = Math.floor(Math.random() * 254); // исключаем белый цвет
-    let g = Math.floor(Math.random() * 254);
-    let b = Math.floor(Math.random() * 254);
+    let r = Math.floor(Math.random() * 200); // исключаем белый цвет и очень светлые тона
+    let g = Math.floor(Math.random() * 200);
+    let b = Math.floor(Math.random() * 200);
     return "rgb(" + r + "," + g + "," + b + ")";
 }
 

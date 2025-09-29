@@ -1,20 +1,16 @@
-import './App.css';
-import React from 'react';
-import Range from './Range';
+import Header from './layout/Header';
+import Footer from './layout/Footer';
+import Main from './layout/Main';
 
-class App extends React.Component {
+function App() {
+  return (
+    <>
+        <Header />
+        <Main />
+        <Footer />
+    </>
 
-    state = {
-
-    }
-    render() {
-
-        return (
-            <div className="App">
-            <Range />
-            </div>
-        )
-    }
+  );
 }
 
 export default App;

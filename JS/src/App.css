@@ -1,0 +1,115 @@
+.app {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+}
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #ccdfe6;
+}
+.task-list {
+    width: 50%;
+    margin: 30px auto ;
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+}
+.del-btn {
+    background-color: #a62138;
+    color: white;
+    text-decoration: none !important;
+}
+.done-btn{
+    text-decoration: none !important
+}
+.done-btn.completed {
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none !important;
+}
+
+.restore-task {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+.restore-task button {
+    background-color: #24333a;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.restore-task button:hover {
+    background-color: #45a049;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+input {
+    width: 100%;
+}
+
+.add-form {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+    white-space: nowrap;
+}
+
+.form-control {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+.add-task {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.add-btn {
+    background-color: #163549;
+    color: white;
+    /*font-weight: bold;*/
+    font-size: 18px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 120px;
+    height: 50px;
+}
